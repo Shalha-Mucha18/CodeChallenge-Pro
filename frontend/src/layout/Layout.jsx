@@ -6,7 +6,7 @@ export function Layout() {
     return <div className="app-layout">
         <header className="app-header">
             <div className="header-content">
-                <h1>🎯 CodeChallenge Pro</h1>
+                <h1>CodeChallenge Pro</h1>
                 <nav>
                     <SignedIn>
                         <Link to="/">Generate</Link>
@@ -52,7 +52,7 @@ export function Layout() {
             borderTop: '1px solid var(--border)'
         }}>
             <p style={{ margin: 0 }}>
-                Made with ❤️ using AI • CodeChallenge Pro © 2026
+                Made by Mucha • CodeChallenge Pro © 2026
             </p>
         </footer>
     </div>

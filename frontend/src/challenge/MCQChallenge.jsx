@@ -35,9 +35,9 @@ export function MCQChallenge({ challenge, showExplanation = false }) {
 
     const getDifficultyBadge = () => {
         const badges = {
-            easy: { emoji: '😊', color: '#4facfe', label: 'Easy' },
-            medium: { emoji: '🤔', color: '#f093fb', label: 'Medium' },
-            hard: { emoji: '🔥', color: '#f5576c', label: 'Hard' }
+            easy: { emoji: '', color: '#4facfe', label: 'Easy' },
+            medium: { emoji: '', color: '#f093fb', label: 'Medium' },
+            hard: { emoji: '', color: '#f5576c', label: 'Hard' }
         }
         const badge = badges[challenge.difficulty] || badges.easy
 
@@ -54,7 +54,6 @@ export function MCQChallenge({ challenge, showExplanation = false }) {
                 fontWeight: '600',
                 color: 'var(--text-primary)'
             }}>
-                <span style={{ fontSize: '1.2rem' }}>{badge.emoji}</span>
                 {badge.label}
             </span>
         )
@@ -85,7 +84,6 @@ export function MCQChallenge({ challenge, showExplanation = false }) {
                     alignItems: 'center',
                     gap: '0.5rem'
                 }}>
-                    <span style={{ fontSize: '1.5rem' }}>{isCorrect ? '🎉' : '💪'}</span>
                     {isCorrect ? 'Correct! Well done!' : 'Not quite! Keep learning!'}
                 </p>
             </div>

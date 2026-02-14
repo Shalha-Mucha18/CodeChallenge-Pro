@@ -18,7 +18,7 @@ export function AuthenticationPage() {
                     fontSize: '2.5rem',
                     marginBottom: '0.5rem'
                 }}>
-                    🎯 CodeChallenge Pro
+                    CodeChallenge Pro
                 </h1>
                 <p style={{
                     fontSize: '1.1rem',
@@ -63,7 +63,7 @@ export function AuthenticationPage() {
             </SignedOut>
             <SignedIn>
                 <div className="redirect-message">
-                    <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>✅</div>
+                    <div style={{ fontSize: '3rem', marginBottom: '1rem' }}></div>
                     <p style={{ fontSize: '1.2rem', fontWeight: '600' }}>
                         You are already signed in!
                     </p>

@@ -413,7 +413,7 @@
 }
 
 .explanation h4::before {
-  content: '💡';
+  content: '';
   font-size: 1.3rem;
 }
 

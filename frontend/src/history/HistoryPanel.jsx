@@ -47,7 +47,7 @@ export function HistoryPanel() {
 
     if (isLoading) {
         return <div className="loading">
-            <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>⏳</div>
+            <div style={{ fontSize: '3rem', marginBottom: '1rem' }}></div>
             Loading your challenge history...
         </div>
     }
@@ -68,7 +68,7 @@ export function HistoryPanel() {
                     cursor: 'pointer'
                 }}
             >
-                🔄 Retry
+                Retry
             </button>
         </div>
     }
@@ -91,7 +91,7 @@ export function HistoryPanel() {
                         border: '1px solid var(--border)',
                         textAlign: 'center'
                     }}>
-                        <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🎯</div>
+                        <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}></div>
                         <div style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--text-primary)' }}>
                             {stats.total}
                         </div>
@@ -107,7 +107,7 @@ export function HistoryPanel() {
                         border: '1px solid var(--border)',
                         textAlign: 'center'
                     }}>
-                        <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>😊</div>
+                        <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}></div>
                         <div style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--text-primary)' }}>
                             {stats.byDifficulty.easy}
                         </div>
@@ -123,7 +123,7 @@ export function HistoryPanel() {
                         border: '1px solid var(--border)',
                         textAlign: 'center'
                     }}>
-                        <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🤔</div>
+                        <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}></div>
                         <div style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--text-primary)' }}>
                             {stats.byDifficulty.medium}
                         </div>
@@ -139,7 +139,7 @@ export function HistoryPanel() {
                         border: '1px solid var(--border)',
                         textAlign: 'center'
                     }}>
-                        <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🔥</div>
+                        <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}></div>
                         <div style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--text-primary)' }}>
                             {stats.byDifficulty.hard}
                         </div>
@@ -173,9 +173,9 @@ export function HistoryPanel() {
                                 textTransform: 'capitalize'
                             }}
                         >
-                            {diff === 'all' ? '🎯 All' :
-                                diff === 'easy' ? '😊 Easy' :
-                                    diff === 'medium' ? '🤔 Medium' : '🔥 Hard'}
+                            {diff === 'all' ? 'All' :
+                                diff === 'easy' ? 'Easy' :
+                                    diff === 'medium' ? 'Medium' : 'Hard'}
                         </button>
                     ))}
                 </div>
@@ -190,7 +190,7 @@ export function HistoryPanel() {
                 borderRadius: 'var(--radius-lg)',
                 border: '1px solid var(--border)'
             }}>
-                <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>📝</div>
+                <div style={{ fontSize: '4rem', marginBottom: '1rem' }}></div>
                 <h3 style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
                     {filter === 'all' ? 'No challenges yet' : `No ${filter} challenges yet`}
                 </h3>

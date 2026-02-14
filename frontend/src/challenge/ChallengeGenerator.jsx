@@ -53,11 +53,11 @@ export function ChallengeGenerator() {
 
     const getDifficultyEmoji = (diff) => {
         const emojis = {
-            easy: "😊",
-            medium: "🤔",
-            hard: "🔥"
+            easy: "",
+            medium: "",
+            hard: ""
         }
-        return emojis[diff] || "🎯"
+        return emojis[diff] || ""
     }
 
     const getQuotaDots = () => {
@@ -87,7 +87,6 @@ export function ChallengeGenerator() {
 
         <div className="quota-display">
             <p>
-                <span style={{ fontSize: '1.3rem' }}>⚡</span>
                 Challenges Remaining Today: <strong>{quota?.quota_remaining || 0} / 5</strong>
             </p>
             <div style={{ marginTop: '0.75rem' }}>
@@ -95,7 +94,7 @@ export function ChallengeGenerator() {
             </div>
             {quota?.quota_remaining === 0 && (
                 <p style={{ marginTop: '1rem', color: 'var(--warning)', fontSize: '0.95rem' }}>
-                    ⏰ Next reset: {getNextResetTime()?.toLocaleString()}
+                    Next reset: {getNextResetTime()?.toLocaleString()}
                 </p>
             )}
         </div>
@@ -110,9 +109,9 @@ export function ChallengeGenerator() {
                 onChange={(e) => setDifficulty(e.target.value)}
                 disabled={isLoading}
             >
-                <option value="easy">😊 Easy - Perfect for Beginners</option>
-                <option value="medium">🤔 Medium - Intermediate Challenge</option>
-                <option value="hard">🔥 Hard - Expert Level</option>
+                <option value="easy">Easy - Perfect for Beginners</option>
+                <option value="medium">Medium - Intermediate Challenge</option>
+                <option value="hard">Hard - Expert Level</option>
             </select>
         </div>
 
@@ -123,15 +122,15 @@ export function ChallengeGenerator() {
         >
             {isLoading ? (
                 <>
-                    <span className="pulse">⚡ Generating...</span>
+                    <span className="pulse">Generating...</span>
                 </>
             ) : (
-                <>✨ Generate Challenge</>
+                <>Generate Challenge</>
             )}
         </button>
 
         {error && <div className="error-message">
-            <p>❌ {error}</p>
+            <p>{error}</p>
         </div>}
 
         {challenge && <MCQChallenge challenge={challenge} />}
